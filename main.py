@@ -43,7 +43,7 @@ def main():
                 return
             
         for shot in shots:
-            if shot.collisions(asteroid):
+            if shot.collides_with(asteroid):
                 shot.kill()
                 asteroid.kill()
 
